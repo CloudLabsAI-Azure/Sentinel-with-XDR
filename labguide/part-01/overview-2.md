@@ -7,7 +7,7 @@ Microsoft Sentinel is a powerful tool for collecting, analyzing, and responding 
 ### Key features of Microsoft Sentinel
 
 - Log Collection: Microsoft Sentinel collects and centralizes log data from a wide range of sources, including servers, applications, devices, and cloud services.
-- Threat Detection: It uses built-in and custom detection rules to identify suspicious activities and security threats in real-time.
+- Threat Detection: It uses built-in and custom detection rules to identify suspicious activities and security threats in real time.
 - Incident Investigation: Security analysts can use Microsoft Sentinel to investigate incidents, analyze logs, and visualize the scope of security threats.
 - Automation: Sentinel offers automation capabilities to respond to common security incidents and orchestrate complex security workflows.
 - Threat Intelligence: It integrates with threat intelligence feeds to enrich data and improve threat detection.
@@ -15,7 +15,7 @@ Integration: Microsoft Sentinel seamlessly integrates with other Microsoft secur
 
 
 ## Sandbox Scenario
-Contoso is a global organization with a complex IT infrastructure that includes a combination of on-premises data centers and cloud-based resources. They are looking to enhance their security posture by deploying Azure Sentinel, Microsoft's cloud-native security information and event management (SIEM), and security orchestration automation and response (SOAR) solution. Additionally, Contoso aims to onboard its cloud resources and servers to Azure Sentinel to gain better visibility and proactive threat detection and response capabilities.
+Contoso is a global organization with a complex IT infrastructure that includes a combination of on-premises data centers and cloud-based resources. They are looking to enhance their security posture by deploying Azure Sentinel, Microsoft's cloud-native security information and event management (SIEM), and security orchestration automation and response (SOAR) solutions. Additionally, Contoso aims to onboard its cloud resources and servers to Azure Sentinel to gain better visibility and proactive threat detection and response capabilities.
 
 By implementing a robust log analytics and threat detection program, Contoso aims to proactively identify and mitigate threats, reduce the risk of security breaches, and maintain a strong security posture in an ever-evolving threat landscape. This approach will enable Contoso to stay ahead of potential threats and protect its digital assets effectively.
 
@@ -39,7 +39,7 @@ Using this environment, You'll be able to explore complete features and offering
 
 #### **Azure Credits**: 
 
-- You have been given a quota of **$83 USD** which includes the running cost of Pre-deployed resources, license cost, and other resources deployed while running through the lab.
+- You have been given a quota of **$83** which includes the running cost of Pre-deployed resources, license cost, and other resources deployed while running through the lab.
 
   You will receive **cost alerts** to your registered email address at **50%/75%/90%/95%/100%** of the allotted Azure Credit is spent.
 
@@ -56,16 +56,16 @@ Using this environment, You'll be able to explore complete features and offering
 
 #### **Best practices**: 
 
-- **Resources usage**: Please stop the virtual machines and other resources when not in use in order to minimize the Azure spend.
+- **Resources usage**: Please stop the virtual machines and other resources when not in use to minimize the Azure spend.
 
-- **Azure Cost Analysis**: Maintain a practice of checking the Cost Analysis report of the assigned Azure subscription oftenly in check the Azure spend so that enviornment for a longer duration of time.
+- **Azure Cost Analysis**: Maintain a practice of checking the Cost Analysis report of the assigned Azure subscription often in check the Azure spending so that the environment can be retained for a longer duration of time.
 
 - **Alert notifications**: Make sure to check your registered email's inbox for any alert-related mails. Alerts give you can head start to keep your Azure spending in control and to plan out the remaining credits in the best way possible.
 ## Lab guide Content:
 
 You will have access to a lab guide which is a reference material to assist you in getting started with the exploration. 
 
-Based on your interests, you can use this lab guide as a reference to learn and test any Microsoft Sentinel feature.  You are also encouraged to explore additional Microsoft Sentinel features based on your interests and preferences.
+Based on your interests, you can use this lab guide as a reference to learn and test any Microsoft Sentinel feature.  You are also encouraged to explore additional features of Microsoft Sentinel based on your interests and preferences.
 
 - Lab 01 - Setup Sentinel Environment
 - Lab 02 - Onboard Server Defender for Cloud
