@@ -65,7 +65,7 @@ Using this environment, You'll be able to explore complete features and offering
 
 You will have access to a lab guide which is a reference material to assist you in getting started with the exploration. 
 
-Based on your interests, you can use this lab guide as a reference to learn and test any Microsoft Purview feature.  You are also encouraged to explore additional Microsoft Purview features based on your interests and preferences.
+Based on your interests, you can use this lab guide as a reference to learn and test any Microsoft Sentinel feature.  You are also encouraged to explore additional Microsoft Sentinel features based on your interests and preferences.
 
 - Lab 01 - Setup Sentinel Environment
 - Lab 02 - Onboard Server Defender for Cloud
