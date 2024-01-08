@@ -1,8 +1,15 @@
 ## Lab 11 - Create a Watchlist, Threat Indicator
 
-## Lab scenario
+## Lab Overview
 
-You're a Security Operations Analyst working at a company that is implementing Microsoft Sentinel. You're responsible for setting up the Microsoft Sentinel environment to meet the company requirements to minimize cost, meet compliance regulations, and provide the most manageable environment for your security team to perform their daily job responsibilities.
+Watchlists in Microsoft Sentinel allow you to correlate data from a data source you provide with the events in your Microsoft Sentinel environment. For example, you might create a watchlist with a list of high-value assets, terminated employees, or service accounts in your environment.
+Use watchlists in your search, detection rules, threat hunting, and response playbooks.
+Watchlists are stored in your Microsoft Sentinel workspace as name-value pairs and are cached for optimal query performance and low latency
+
+Threat indicator involves defining and configuring specific details related to a potential threat within a security system, often using a threat intelligence platform or a security information and event management (SIEM) system like Microsoft Sentinel. The purpose of creating a threat indicator is to provide a standardized way to identify and track potential security risks, allowing organizations to enhance their cybersecurity defenses.
+
+## Lab scenario
+In this lab, you will create a watchlist in Microsoft Sentinel, compiling a list of high-value hostnames. Simultaneously, you will generate a threat indicator for a specific domain associated with malicious activity. The lab focuses on guiding you through the configuration process in Sentinel, which includes uploading files, defining search keys, and reviewing and creating both watchlists and threat indicators. Furthermore, you will learn how to access and view the created watchlist and threat indicator within logs using KQL (Kusto Query Language) statements in Microsoft Sentinel. This hands-on exercise aims to enhance your understanding and proficiency in configuring threat intelligence features within the Sentinel platform.
 
 ## Lab objectives (Duration : 20 minutes)
  In this lab, you will perform the following:
@@ -58,10 +65,12 @@ In this task, you will create a watchlist in Microsoft Sentinel.
 1. Review the settings you entered and select **Create**.
 
 1. The screen returns to the Watchlist page.
-
+   
+   >**Note**: The watchlist is configured to trigger alerts or incidents whenever there is suspicious or unauthorized activity involving the high-value hostnames. This can include unusual access patterns, login attempts, or any other behavior that deviates from the normal usage pattern.
+   
 1. Select the *HighValueHosts* watchlist and on the right pane, select **View in logs**.
 
-    >**Important:** It could take up to ten minutes for the watchlist to appear. **Please continue to with the following task and run this command on the next lab**.
+    >**Important**: It could take up to ten minutes for the watchlist to appear. **Please continue to with the following task and run this command on the next lab**.
     
     >**Note:** You can now use the _GetWatchlist('HighValueHosts') in your own KQL statements to access the list. The column to reference would be *Hostname*.
 
@@ -81,7 +90,7 @@ In this task, you will create an indicator in Microsoft Sentinel.
 
 1. For the *Name*, enter the same value used for the Domain. An example would be **onmicrosoft.com**.
 
-1. Set the **Valid from* field to today's date. and **valid till* to next day 
+1. Set the *Valid from* field to today's date. and *valid till* to next day 
 
 1. Select **Apply**.
 

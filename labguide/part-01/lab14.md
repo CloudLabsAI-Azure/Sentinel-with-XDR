@@ -1,10 +1,10 @@
 ## Lab 14 - Create queries for Microsoft Sentinel using Kusto Query Language (KQL)
 
+## Lab Overview
+Kusto Query Language (KQL) is a query language developed by Microsoft for querying and analyzing data stored in Microsoft Sentinel, Azure Data Explorer, Azure Monitor, Azure Log Analytics, and other Microsoft services. It is a powerful and flexible language designed for working with large-scale data sets and is commonly used in scenarios involving log and telemetry data
+
 ## Lab scenario
-
 You are a Security Operations Analyst working at a company that is implementing Microsoft Sentinel. You are responsible for performing log data analysis to search for malicious activity, display visualizations, and perform threat hunting. To query log data, you use the Kusto Query Language (KQL).
-
->**Important:** This lab involves entering many KQL scripts into Microsoft Sentinel. The scripts were provided in a file at the beginning of this lab. An alternate location to download them is:  https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/tree/master/Allfiles
 
 ## Lab objectives (Duration: 90 minutes)
  In this lab, you will perform the following:
@@ -33,7 +33,7 @@ You are a Security Operations Analyst working at a company that is implementing 
 
 1. From the **Microsoft Sentinel** blade, from left menu select **Content hub** under **Content management** section.
 
-1. On the content hub page search for **Windows security event** and select, Install
+1. On the content hub page search for **Windows Security Events** and select, Install
 
 1. Once you receive the notification of successful installation go back to the Data connector page and click on refresh
 
@@ -71,17 +71,15 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
 1. Select the Log Analytics workspace you created earlier *uniquenameDefender* to review the available options and pricing.
 
-1. Select **Enable all** (to the right of Select Defender plan) and then select **Save**. Wait for the **Microsoft Defender plan for workspace uniquenameDefender was saved successfully!** notification to appear.
+1. If the existing plans are in **Off** state then toggle it to **On** and then Select **Enable all** (to the right of Select Defender plan) and then select **Save**. Wait for the **Microsoft Defender plan for workspace uniquenameDefender was saved successfully!** notification to appear.
 
-    ![Picture 1](../media/SC-200-img333.png)
-
-    >**Note:** If the page is not being displayed, refresh your Edge browser and try again.
+    >**Note:** Ignore the step, if the plans are already in **On** state.
 
 1. Close the Defender plans page by selecting the 'X' on the upper right of the page to go back to the **Environment settings**
 
-### Task 3: Protect an On-Premises Server.
+### Task 3: Protect an On-Premises Server (LabVM/HostVM)
 
-In this task, you will manually install the required agent on the Windows Server.
+In this task, you will manually install the required agent on the Windows Server(LabVM).
 
 1.  Go to **Microsoft Defender for Cloud** and select the **Getting Started** page.
 
